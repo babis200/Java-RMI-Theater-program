@@ -6,7 +6,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
 import java.lang.Integer;
 
-public class TheaterClient extends UnicastRemoteObject implements TheaterListener {
+public class TheaterClient extends UnicastRemoteObject implements ITheaterListener {
     protected TheaterClient() throws RemoteException {
     }
 

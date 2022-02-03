@@ -2,10 +2,10 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TheaterImpl 
+public class TheaterService 
     extends 
       java.rmi.server.UnicastRemoteObject 
-    implements TheaterInterface { 
+    implements ITheaterInterface { 
     
     private List<Customer> custArrayList = new ArrayList<>();           //list of customers/audience
     private final List<TheaterListener> theaterListenerOA = new ArrayList<>();  //Listener for seats of type OA
@@ -17,7 +17,7 @@ public class TheaterImpl
 
  
     
-    public TheaterImpl() 
+    public TheaterService() 
         throws java.rmi.RemoteException { 
         super(); 
     } 
